@@ -59,4 +59,29 @@ footer ul li a {
 footer ul li a i {
   width: 25px;
 }
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
+.localisation i {
+  margin-right: 15px;
+}
+
+.localisation input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: 25%;
+}
 /*# sourceMappingURL=style.css.map */

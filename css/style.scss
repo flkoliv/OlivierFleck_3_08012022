@@ -15,10 +15,8 @@ h1{
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
 }
-
-
 
 footer{
     background-color: #353535;
@@ -50,4 +48,22 @@ footer{
             }
         }
     }
+}
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height : 50px;
+    i{
+        margin-right: 15px;
+    }
+    input{
+        border:none;
+        background-color: transparent;
+        text-align: center;
+        width: 25%;
+    }
+    
 }
