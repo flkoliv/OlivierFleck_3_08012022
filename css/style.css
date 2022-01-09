@@ -407,5 +407,14 @@ footer ul li a i {
   .restaurants .choixresto .restaurant {
     width: 45%;
   }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 15px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -278,6 +278,14 @@ footer{
         }
         
     }
+    footer{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin:15px;
+            width:100%;
+        }
+    }
 }
 
 
