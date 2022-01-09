@@ -150,8 +150,21 @@ footer ul li a i {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 350px;
+  height: 280px;
   margin: 20px 0;
+}
+
+.fonctionnement .choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
 }
 
 .fonctionnement h2 {
@@ -159,7 +172,7 @@ footer ul li a i {
   margin: 0 0 0 20px;
 }
 
-.fonctionnement div {
+.fonctionnement .unchoix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,6 +256,7 @@ footer ul li a i {
 }
 
 .restaurants .restaurant {
+  position: relative;
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +275,16 @@ footer ul li a i {
           box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: black;
+}
+
+.restaurants .restaurant .nouveau {
+  background-color: #99E2D0;
+  border-radius: 3px;
+  color: #008766;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
 }
 
 .restaurants .nom {
@@ -348,6 +372,40 @@ footer ul li a i {
     -webkit-text-fill-color: transparent;
     opacity: 1;
     -webkit-text-stroke: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .fonctionnement {
+    height: 100px;
+  }
+  .fonctionnement .choix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonctionnement .choix .unchoix {
+    width: 33%;
+  }
+  .restaurants .choixresto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .restaurants .choixresto .restaurant {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=style.css.map */
