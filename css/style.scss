@@ -217,7 +217,7 @@ footer{
             }
             @keyframes color_fill {
                 0% {
-                  background: linear-gradient(#9356DC, #FF79DA);
+                  background: linear-gradient($primaire, $secondaire);
                   background-clip: text;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
@@ -225,7 +225,7 @@ footer{
                   -webkit-text-stroke: unset;
                 }
                 100% {
-                  background: linear-gradient(0deg, #ff79da, #9356dc);
+                  background: linear-gradient(0deg, $secondaire, $primaire);
                   background-clip: text;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
