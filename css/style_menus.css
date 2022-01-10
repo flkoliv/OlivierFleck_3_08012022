@@ -179,8 +179,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .carte article .plat {
@@ -242,7 +243,10 @@ img {
 
 .carte article .checked {
   background-color: #99E2D0;
-  width: 0px;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   display: -webkit-box;
@@ -254,15 +258,30 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  visibility: hidden;
   color: white;
   font-size: 30px;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
 }
 
 .carte article:hover .checked {
-  background-color: #99E2D0;
-  width: 100px;
-  visibility: visible;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.carte article:hover .fa-check-circle {
+  -webkit-animation: rotation;
+          animation: rotation;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .carte .bouton {

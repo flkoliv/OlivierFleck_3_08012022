@@ -125,6 +125,9 @@ img{
         background-color: white;
         display: flex;
         justify-content: space-between;
+        overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         
         .plat{
             display: flex;
@@ -166,23 +169,33 @@ img{
         }
         .checked{
             background-color: $tertiaire;
-            width: 0px;
+            width: 100px;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            visibility: hidden;
+            
             color: white;
             font-size: 30px;
+            transform: translateX(100px);
+            transform-origin: 100% 50%;
+            transition: transform 330ms ease-in-out;
         }
-        transition:0.3s;
+
         &:hover{
             .checked{
-                background-color: $tertiaire;
-                width:100px;
-                visibility: visible;
+                transform: translateX(0px);
+                
             }
+            .fa-check-circle {
+                animation: rotation;
+                transition-duration:  1000ms;
+                transform: rotate(360deg);
+              }
         }
     }
     .bouton{
