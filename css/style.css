@@ -391,7 +391,7 @@ footer ul li a i {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 1000;
-  background-color: whitesmoke;
+  background-color: white;
   opacity: 1;
   -webkit-animation: background-fixed 2s 1;
           animation: background-fixed 2s 1;
