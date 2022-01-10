@@ -124,25 +124,64 @@ img{
         box-shadow: 0 1px 6px;
         background-color: white;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        h4{
-            margin: 10px 0 0 10px;
+        justify-content: space-between;
+        
+        .plat{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0 10px 0 10px;
+            width:fill-available;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-        }
-        div{
-            display: flex;
-            justify-content: space-between;
-            margin: 0 10px 0 10px;
-            .description{
+            h4{
+                margin: 10px 0 0 10px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+                
             }
-            .price{
-                width:30px;
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .description{
+                    width: 100%;
+                    margin : 0px 0 0 10px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    
+                }
+                .prix{
+                    width:30px;
+                    margin-left: 15px;
+                }
+            }
+            
+            
+        }
+        .checked{
+            background-color: $tertiaire;
+            width: 0px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            color: white;
+            font-size: 30px;
+        }
+        transition:0.3s;
+        &:hover{
+            .checked{
+                background-color: $tertiaire;
+                width:100px;
+                visibility: visible;
             }
         }
     }

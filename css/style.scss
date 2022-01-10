@@ -63,10 +63,17 @@ footer{
     }
     input{
         border:none;
+        outline: none;
         background-color: transparent;
         text-align: center;
         width: 25%;
+        height :30px;
+        border-radius: 15px;
+        &:focus{
+            border: 2px solid $primaire;
+        }
     }
+    
     
 }
 

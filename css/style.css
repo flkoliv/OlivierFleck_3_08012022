@@ -81,9 +81,16 @@ footer ul li a i {
 
 .localisation input {
   border: none;
+  outline: none;
   background-color: transparent;
   text-align: center;
   width: 25%;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.localisation input:focus {
+  border: 2px solid #9356DC;
 }
 
 .titre {
