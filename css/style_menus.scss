@@ -134,7 +134,8 @@ img{
             justify-content: space-between;
             flex-direction: column;
             margin: 0 10px 0 10px;
-            width:fill-available;
+            flex-grow: 1;
+            width: 100%;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -143,6 +144,7 @@ img{
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
+                width: 100%;
                 
             }
             div{
@@ -169,7 +171,6 @@ img{
         }
         .checked{
             background-color: $tertiaire;
-            width: 100px;
             overflow:hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -181,7 +182,6 @@ img{
             width:0px;
             color: white;
             font-size: 30px;
-            transform: translateX(100px);
             transform-origin: 100% 50%;
             transition: transform 330ms ease-in-out;
             transition: width 330ms;
@@ -189,7 +189,6 @@ img{
 
         &:hover{
             .checked{
-                transform: translateX(0px);
                 width:100px;
                 
             }
