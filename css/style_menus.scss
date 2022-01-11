@@ -221,23 +221,21 @@ img{
         }
     }
 }
-.contenu-menu{
+.plats {
     animation: fadeIn 1.5s ease-in-out both;
 
 
 }
 @keyframes fadeIn {
     0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 50%, 0);
-      transform: translate3d(0, 50%, 0);
-  }
-  100% {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-  }
-  }
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 
 
