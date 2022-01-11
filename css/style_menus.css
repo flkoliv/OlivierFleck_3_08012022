@@ -170,8 +170,8 @@ img {
 .carte article {
   border-radius: 20px;
   margin: 15px;
-  -webkit-box-shadow: 0 1px 6px;
-          box-shadow: 0 1px 6px;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,12 +262,6 @@ img {
   width: 0px;
   color: white;
   font-size: 30px;
-  -webkit-transform-origin: 100% 50%;
-          transform-origin: 100% 50%;
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
   -webkit-transition: width 330ms;
   transition: width 330ms;
 }
@@ -277,8 +271,6 @@ img {
 }
 
 .carte article:hover .fa-check-circle {
-  -webkit-animation: rotation;
-          animation: rotation;
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
   -webkit-transform: rotate(360deg);
@@ -296,8 +288,8 @@ img {
 }
 
 .carte .bouton button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
   -webkit-box-shadow: 0 2px 10px #868686;
