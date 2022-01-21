@@ -335,9 +335,8 @@ footer ul li a i {
 }
 
 .restaurants .description i:hover {
-  -webkit-text-stroke-width: 0px;
-  -webkit-animation: color_fill 1.5s ease-out 1 forwards;
-          animation: color_fill 1.5s ease-out 1 forwards;
+  -webkit-animation: color_fill 1s ease-in 1 forwards;
+          animation: color_fill 1s ease-in 1 forwards;
 }
 
 @-webkit-keyframes color_fill {
@@ -347,12 +346,12 @@ footer ul li a i {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0;
     -webkit-text-stroke: unset;
+    opacity: 0;
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(0deg, #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -368,12 +367,12 @@ footer ul li a i {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0;
     -webkit-text-stroke: unset;
+    opacity: 0;
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(0deg, #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

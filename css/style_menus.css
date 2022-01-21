@@ -115,8 +115,8 @@ img {
 
 .carte .titre-menu i:hover {
   -webkit-text-stroke-width: 0px;
-  -webkit-animation: color_fill 1.5s ease-out 1 forwards;
-          animation: color_fill 1.5s ease-out 1 forwards;
+  -webkit-animation: color_fill 1s ease-in 1 forwards;
+          animation: color_fill 1s ease-in 1 forwards;
 }
 
 @-webkit-keyframes color_fill {
@@ -130,8 +130,8 @@ img {
     -webkit-text-stroke: unset;
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(0deg, #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,8 +151,8 @@ img {
     -webkit-text-stroke: unset;
   }
   100% {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(0deg, #FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -309,9 +309,19 @@ img {
   cursor: pointer;
 }
 
-.plats {
+.plats:nth-child(1) {
   -webkit-animation: fadeIn 1.5s ease-in-out both;
           animation: fadeIn 1.5s ease-in-out both;
+}
+
+.plats:nth-child(2) {
+  -webkit-animation: fadeIn 1.5s ease-in-out both 1s;
+          animation: fadeIn 1.5s ease-in-out both 1s;
+}
+
+.plats:nth-child(3) {
+  -webkit-animation: fadeIn 1.5s ease-in-out both 2s;
+          animation: fadeIn 1.5s ease-in-out both 2s;
 }
 
 @-webkit-keyframes fadeIn {

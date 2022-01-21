@@ -91,7 +91,7 @@ img{
             &:hover{
                 
                 -webkit-text-stroke-width: 0px;
-                animation: color_fill 1.5s ease-out 1 forwards;
+                animation: color_fill 1s ease-in 1 forwards;
             }
             @keyframes color_fill {
                 0% {
@@ -103,14 +103,14 @@ img{
                   -webkit-text-stroke: unset;
                 }
                 100% {
-                  background: linear-gradient(0deg, $secondaire, $primaire);
+                  background: linear-gradient($secondaire, $primaire);
                   background-clip: text;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
                   opacity: 1;
                   -webkit-text-stroke: unset;
                 }
-              }
+            }
         }
     }
     h3{
@@ -216,11 +216,17 @@ img{
         }
     }
 }
-.plats {
+
+.plats:nth-child(1) {
     animation: fadeIn 1.5s ease-in-out both;
-
-
 }
+.plats:nth-child(2) {
+    animation: fadeIn 1.5s ease-in-out both 1s;
+}
+.plats:nth-child(3) {
+    animation: fadeIn 1.5s ease-in-out both 2s;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
