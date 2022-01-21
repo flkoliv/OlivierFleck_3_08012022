@@ -310,18 +310,18 @@ img {
 }
 
 .plats:nth-child(1) {
-  -webkit-animation: fadeIn 1.5s ease-in-out both;
-          animation: fadeIn 1.5s ease-in-out both;
+  -webkit-animation: fadeIn 1s ease-in-out both;
+          animation: fadeIn 1s ease-in-out both;
 }
 
 .plats:nth-child(2) {
-  -webkit-animation: fadeIn 1.5s ease-in-out both 1s;
-          animation: fadeIn 1.5s ease-in-out both 1s;
+  -webkit-animation: fadeIn 1s ease-in-out both 0.5s;
+          animation: fadeIn 1s ease-in-out both 0.5s;
 }
 
 .plats:nth-child(3) {
-  -webkit-animation: fadeIn 1.5s ease-in-out both 2s;
-          animation: fadeIn 1.5s ease-in-out both 2s;
+  -webkit-animation: fadeIn 1s ease-in-out both 1s;
+          animation: fadeIn 1s ease-in-out both 1s;
 }
 
 @-webkit-keyframes fadeIn {
