@@ -1,61 +1,58 @@
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
+$primaire: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
 
-
-
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     background-color: #f6f6f6;
 }
 
-
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    h1{
-        font-family: 'Shrikhand', cursive;
+    h1 {
+        font-family: "Shrikhand", cursive;
         margin: 12px;
         font-size: 30px;
         font-weight: 400;
     }
-    i{
+    i {
         font-size: 20px;
         position: absolute;
-        top: 23px;
-        left:10px;
+        top: 20px;
+        left: 10px;
         color: black;
     }
 }
 
-footer{
+footer {
     background-color: #353535;
     color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    div{
-        width:90%;
-        h6{
-            font-family: 'Shrikhand', cursive;
+    div {
+        width: 90%;
+        h6 {
+            font-family: "Shrikhand", cursive;
             font-size: 18px;
             font-weight: 400;
             margin: 22px 0;
         }
     }
-    ul{
+    ul {
         list-style-type: none;
-        margin : 0 0 30px 0 ;
+        margin: 0 0 30px 0;
         padding: 0;
-        width : 90%;
-        li{
+        width: 90%;
+        li {
             margin-bottom: 10px;
-            a{
-                i{
-                    width:25px;
+            a {
+                i {
+                    width: 25px;
                 }
                 text-decoration: none;
                 color: white;
@@ -64,82 +61,80 @@ footer{
     }
 }
 
-img{
+img {
     position: relative;
     object-fit: cover;
-    width:100%;
+    width: 100%;
     height: 270px;
-    
 }
 
-.carte{
+.carte {
     position: relative;
     background-color: #f6f6f6;
     overflow: hidden;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    top:-50px;
-    .titre-menu{
+    top: -50px;
+    .titre-menu {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
-        margin : 16px 28px -40px 28px;
-        h2{
-            font-family: 'Shrikhand', cursive;
+        margin: 16px 28px -40px 28px;
+        h2 {
+            font-family: "Shrikhand", cursive;
             font-weight: 500;
             font-size: 28px;
         }
-        .like{
-            position:relative;
+        .like {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 25px;
             margin-left: 25px;
-            .masked{
+            .masked {
                 font-size: 25px;
-                position:absolute;
+                position: absolute;
                 transition: 0.5s;
             }
-            .mask{
+            .mask {
                 font-size: 25px;
                 background: linear-gradient($primaire, $secondaire);
-                background-clip:text;
-                -webkit-background-clip:text;
+                background-clip: text;
+                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 position: absolute;
                 opacity: 0;
                 transition: 0.5s;
-                z-index:10;
+                z-index: 10;
             }
-            &:hover .masked{
+            &:hover .masked {
                 opacity: 0;
             }
-            &:hover .mask{
+            &:hover .mask {
                 opacity: 1;
             }
-            
         }
     }
-    h3{
+    h3 {
         border-bottom: 3px solid $tertiaire;
-        width:40px;
-        margin:35px 0px 10px 20px;
+        width: 40px;
+        margin: 35px 0px 10px 20px;
         padding-bottom: 5px;
         font-weight: 400;
         font-size: 16px;
     }
-    article{
+    article {
         border-radius: 20px;
-        margin:15px;
+        margin: 15px;
         box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
         background-color: white;
         display: flex;
         justify-content: space-between;
-        overflow:hidden;
+        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        .plat{
+        .plat {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -149,44 +144,41 @@ img{
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            h4{
+            h4 {
                 margin: 15px 0 5px 10px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
                 width: 95%;
                 font-size: 18px;
-                
             }
-            div{
+            div {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
                 margin-top: 0;
-                height:30px;
-                .description{
+                height: 30px;
+                .description {
                     width: 100%;
-                    margin : 0px 0 15px 10px;
+                    margin: 0px 0 15px 10px;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    overflow: hidden; 
-                    font-size: 15px;                   
+                    overflow: hidden;
+                    font-size: 15px;
                 }
-                .prix{
-                    width:30px;
+                .prix {
+                    width: 30px;
                     margin-left: 15px;
                     margin-bottom: 30px;
                     font-weight: 500;
                 }
             }
-            
-            
         }
-        .checked{
+        .checked {
             background-color: $tertiaire;
-            overflow:hidden;
+            overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             border-top-right-radius: 20px;
@@ -194,55 +186,51 @@ img{
             display: flex;
             justify-content: center;
             align-items: center;
-            width:0px;
+            width: 0px;
             color: white;
             font-size: 22px;
             transition: width 330ms;
         }
 
-        &:hover{
+        &:hover {
             cursor: pointer;
-            .checked{
-                width:80px;
-                
+            .checked {
+                width: 80px;
             }
             .fa-check-circle {
-                transition-duration:  1000ms;
+                transition-duration: 1000ms;
                 transform: rotate(360deg);
             }
         }
     }
-    .bouton{
+    .bouton {
         display: flex;
         justify-content: center;
         margin: 50px 50px 30px 50px;
-        button{
-            background:linear-gradient($secondaire, $primaire);
+        button {
+            background: linear-gradient($secondaire, $primaire);
             font-size: 16px;
-            border:none;
+            font-weight: 500;
+            border: none;
             color: white;
             box-shadow: 0 2px 10px #868686;
             height: 50px;
             border-radius: 50px;
-            width:60%;
+            width: 60%;
             transition: 0.3s;
-            &:hover{
-                background:linear-gradient(lighten($secondaire,10%) , lighten($primaire,10%));
+            &:hover {
+                background: linear-gradient(lighten($secondaire, 5%), lighten($primaire, 5%));
                 box-shadow: 0 10px 15px #868686;
-                cursor:pointer;
+                cursor: pointer;
             }
         }
     }
 }
 
-.plats:nth-child(1) {
-    animation: fadeIn 1s ease-in-out both;
-}
-.plats:nth-child(2) {
-    animation: fadeIn 1s ease-in-out both 0.5s;
-}
-.plats:nth-child(3) {
-    animation: fadeIn 1s ease-in-out both 1s;
+@for $i from 1 through 3{
+    .plats:nth-child(#{$i}) {
+        animation: fadeIn 1s ease-in-out both (($i*0.5)-0.5s);
+    }
 }
 
 @keyframes fadeIn {
@@ -256,24 +244,21 @@ img{
     }
 }
 
-
-
 @media (min-width: 992px) {
-    .contenu-menu{
+    .contenu-menu {
         display: flex;
-        justify-content:space-around;
-        .plats{
-            width:32%;
+        justify-content: space-around;
+        .plats {
+            width: 32%;
         }
     }
 
-    footer{
-        ul{
+    footer {
+        ul {
             display: flex;
             justify-content: space-around;
-            margin:15px;
-            width:100%;
+            margin: 15px;
+            width: 100%;
         }
     }
 }
-

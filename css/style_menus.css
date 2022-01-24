@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background-color: #f6f6f6;
 }
@@ -17,7 +17,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   margin: 12px;
   font-size: 30px;
   font-weight: 400;
@@ -26,7 +26,7 @@ header h1 {
 header i {
   font-size: 20px;
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: 10px;
   color: black;
 }
@@ -52,7 +52,7 @@ footer div {
 }
 
 footer div h6 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   margin: 22px 0;
@@ -109,7 +109,7 @@ img {
 }
 
 .carte .titre-menu h2 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: 500;
   font-size: 28px;
 }
@@ -138,8 +138,8 @@ img {
 
 .carte .titre-menu .like .mask {
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -159,7 +159,7 @@ img {
 }
 
 .carte h3 {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
   margin: 35px 0px 10px 20px;
   padding-bottom: 5px;
@@ -250,7 +250,7 @@ img {
 }
 
 .carte article .checked {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -298,9 +298,10 @@ img {
 }
 
 .carte .bouton button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   font-size: 16px;
+  font-weight: 500;
   border: none;
   color: white;
   -webkit-box-shadow: 0 2px 10px #868686;
@@ -313,16 +314,16 @@ img {
 }
 
 .carte .bouton button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(#fface8, #ae80e5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
   -webkit-box-shadow: 0 10px 15px #868686;
           box-shadow: 0 10px 15px #868686;
   cursor: pointer;
 }
 
 .plats:nth-child(1) {
-  -webkit-animation: fadeIn 1s ease-in-out both;
-          animation: fadeIn 1s ease-in-out both;
+  -webkit-animation: fadeIn 1s ease-in-out both 0s;
+          animation: fadeIn 1s ease-in-out both 0s;
 }
 
 .plats:nth-child(2) {

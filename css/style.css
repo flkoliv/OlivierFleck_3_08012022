@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   margin: 12px;
   font-size: 30px;
   font-weight: 400;
@@ -43,7 +43,7 @@ footer div {
 }
 
 footer div h6 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   margin: 22px 0;
@@ -79,7 +79,7 @@ footer ul li a i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 50px;
 }
 
@@ -100,7 +100,7 @@ footer ul li a i {
 }
 
 .localisation input:focus {
-  border: 2px solid #9356DC;
+  border: 2px solid #9356dc;
 }
 
 .titre {
@@ -138,8 +138,8 @@ footer ul li a i {
 .titre button {
   font-size: 16px;
   font-weight: 500;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   border: none;
   color: white;
   -webkit-box-shadow: 0 2px 10px #868686;
@@ -154,8 +154,8 @@ footer ul li a i {
 }
 
 .titre button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(#fface8, #ae80e5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
   -webkit-box-shadow: 0 10px 15px #868686;
           box-shadow: 0 10px 15px #868686;
   cursor: pointer;
@@ -219,7 +219,7 @@ footer ul li a i {
   border-radius: 100%;
   width: 25px;
   height: 25px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   margin-left: 10px;
   margin-right: -10px;
@@ -263,7 +263,7 @@ footer ul li a i {
 }
 
 .fonctionnement .texte:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .restaurants {
@@ -308,7 +308,7 @@ footer ul li a i {
 }
 
 .restaurants .restaurant .nouveau {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 3px;
   color: #008766;
   position: absolute;
@@ -378,16 +378,15 @@ footer ul li a i {
 
 .restaurants .description .like .mask {
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
   opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 10;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .restaurants .description .like:hover .masked {
@@ -429,31 +428,32 @@ footer ul li a i {
   height: 200px;
   position: relative;
   text-align: center;
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-          animation: sk-rotate 2.0s infinite linear;
+  -webkit-animation: sk-rotate 2s infinite linear;
+          animation: sk-rotate 2s infinite linear;
 }
 
-.loader .spinner .dot1, .loader .spinner .dot2 {
+.loader .spinner .dot1,
+.loader .spinner .dot2 {
   width: 60%;
   height: 60%;
   display: inline-block;
   position: absolute;
   top: 0;
   border-radius: 100%;
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-          animation: sk-bounce 2.0s infinite ease-in-out;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+          animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .loader .spinner .dot1 {
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .loader .spinner .dot2 {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   top: auto;
   bottom: 0;
-  -webkit-animation-delay: -1.0s;
-          animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 @-webkit-keyframes background-fixed {
